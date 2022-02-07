@@ -1,0 +1,114 @@
+@import '_zeroing'; // файл обнуления стилей
+
+%fontAnonymous {
+    font-family: 'Anonymous Pro', monospace;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Arial';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 101.52%;
+    text-transform: uppercase;
+}
+
+.main-btn {
+    @extend %fontAnonymous;
+    font-size: 14px;
+    color: #757575;
+    line-height: 14px;
+    padding: 18px 36px;
+    background-color: #FFFFFF;
+    border: 2px solid #D2CFE1;
+    border-radius: 30px;
+    display: inline-block;
+    transition: all .3s ease;
+    &:hover {
+        color: #fff;
+        border: 2px solid #757575;
+        background-color: #757575;
+    }
+}
+
+.text-bg {
+    @extend %fontAnonymous;
+    font-weight: bold;
+    font-size: 144px;
+    line-height: 144px;
+    letter-spacing: 0.08em;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+    padding: 27px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    .header__menu {
+       a {
+            @extend %fontAnonymous;
+            color: #7C7C7C;
+            font-size: 14px;
+        }
+    }
+}
+
+.main__social-newtwork {
+    margin-top: 280px;
+    a {
+       display: flex;
+       margin: 25px 0;
+       align-items: center;
+       justify-content: center;
+    }
+}
+
+.main__offer {
+    >img {
+        margin: 127px 0 29px 0;
+    }
+    p {
+        @extend %fontAnonymous;
+        margin: 7px 0 23px 0;
+    }
+}
+
+.main__img-wrapper {
+    position: relative;
+    .main__code-bg {
+        position: absolute;
+        top: 0;
+        left: -25px;
+        z-index: 1;
+    }
+    .text-bg {
+        margin-left: -25px;
+        margin-bottom: 87px;
+    }
+    .main__img {
+        position: relative;
+        z-index: 2;
+        margin-bottom: 50px;
+    }
+}
+
+.navigation {
+    padding: 34px 0;
+    nav {
+        a {
+            @extend %fontAnonymous;
+            font-size: 18px;
+            color: #B8C5D6;
+        }
+    }
+}
+
+
