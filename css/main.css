@@ -89,7 +89,7 @@ h6 {
 }
 
 /*--------------------*/
-.main-btn, .text-bg, .header .header__menu a, .main__offer p, .navigation nav a {
+.main-btn, .text-bg, .tag-title, .header__menu a, .main__offer p, .navigation nav a, .applicability__block_title, .advantages__item_title, .footer__credits {
   font-family: 'Anonymous Pro', monospace;
 }
 
@@ -99,7 +99,20 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #757575;
+}
+
+section {
   overflow: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a, button {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 h1 {
@@ -108,6 +121,13 @@ h1 {
   font-size: 48px;
   line-height: 101.52%;
   text-transform: uppercase;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #444444;
 }
 
 .main-btn {
@@ -119,8 +139,6 @@ h1 {
   border: 2px solid #D2CFE1;
   border-radius: 30px;
   display: inline-block;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
 }
 
 .main-btn:hover {
@@ -138,13 +156,40 @@ h1 {
   text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
 }
 
+.tag-title {
+  color: #9EE9BC;
+}
+
+.section-content h2 {
+  margin: 15px 0 43px 0;
+}
+
+.section-content p {
+  line-height: 115.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 325px;
+  text-align: justify;
+}
+
+.section-content p span {
+  color: #B8C5D6;
+  display: block;
+  margin-right: 5px;
+}
+
+.anime-block {
+  opacity: 0;
+}
+
 .header {
   padding: 27px 0;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.header .header__menu a {
+.header__menu a {
   color: #7C7C7C;
   font-size: 14px;
 }
@@ -172,6 +217,7 @@ h1 {
 
 .main__offer p {
   margin: 7px 0 23px 0;
+  line-height: 18px;
 }
 
 .main__img-wrapper {
@@ -203,4 +249,134 @@ h1 {
 .navigation nav a {
   font-size: 18px;
   color: #B8C5D6;
+}
+
+.applicability {
+  padding: 138px 0 45px 0;
+}
+
+.applicability__block {
+  width: 225px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 17px;
+  padding: 34px 14px 17px 14px;
+}
+
+.applicability__block_title {
+  color: #7C7C7C;
+  margin: 25px 0 13px 0;
+  font-weight: 700;
+}
+
+.applicability__block_text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 107.69%;
+  margin-bottom: 16px;
+}
+
+.applicability__block a {
+  font-size: 14px;
+  line-height: 14px;
+  color: #189599;
+}
+
+.applicability__block a:hover {
+  color: #98DFB4;
+}
+
+.applicability__block.second {
+  margin-top: 50px;
+}
+
+.applicability .section-content {
+  width: 300px;
+  margin: 106px auto 0 auto;
+}
+
+.applicability .text-bg {
+  margin-top: 31px;
+}
+
+.video-monitoring {
+  padding: 130px 0 150px 0;
+  background: url(../img/video-monitoring-bg.png) no-repeat center left;
+}
+
+.video-monitoring .section-content {
+  margin-top: 100px;
+}
+
+.advantages {
+  padding: 34px 0;
+}
+
+.advantages__block {
+  width: 840px;
+  padding: 32px 52px 45px 52px;
+  margin: 0 auto;
+  background: url(../img/advantages-bg.png) no-repeat top left;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages__item {
+  color: #189599;
+  text-shadow: 0px 0px 8px rgba(24, 149, 153, 0.7);
+  text-align: center;
+}
+
+.advantages__item_title {
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: 0.08em;
+}
+
+.tele-radio-fonds {
+  padding: 168px 0;
+}
+
+.tele-radio-fonds .section-content {
+  margin-top: 60px;
+}
+
+.inventory {
+  padding: 25px 0 190px 0;
+  background: url(../img/cadastre-bg.png) no-repeat top left;
+}
+
+.inventory .text-bg {
+  margin-left: 25px;
+}
+
+.inventory .section-content {
+  margin-top: 70px;
+}
+
+.review {
+  padding: 43px 0;
+}
+
+.exploration {
+  padding: 160px 0 140px 0;
+}
+
+.footer {
+  background: #189599;
+  padding: 38px 0;
+}
+
+.footer__credits {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
 }
