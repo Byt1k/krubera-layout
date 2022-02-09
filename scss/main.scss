@@ -383,6 +383,10 @@ h2 {
       display: block;
       text-align: center;
     }
+    overflow: hidden;
+    &.visible {
+      overflow: visible;
+    }
     &__menu { // Мобильное меню
       position: absolute;
       top: 36px;
@@ -529,6 +533,10 @@ h2 {
         display: none;
       }
     }
+  }
+
+  .footer {
+    padding: 15px 0;
   }
 }
 

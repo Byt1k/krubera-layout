@@ -475,6 +475,7 @@ h2 {
   }
   .header {
     padding: 15px 0;
+    overflow: hidden;
   }
   .header .container {
     position: relative;
@@ -482,6 +483,9 @@ h2 {
   .header__logo {
     display: block;
     text-align: center;
+  }
+  .header.visible {
+    overflow: visible;
   }
   .header__menu {
     position: absolute;
@@ -628,5 +632,8 @@ h2 {
   }
   .review .text-center br {
     display: none;
+  }
+  .footer {
+    padding: 15px 0;
   }
 }
